@@ -3,9 +3,11 @@ import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
 import { Card, CardContent, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectPostById } from "./postsSlice";
 
-const PostItem = ({ post }) => {
-  //console.log(post);
+const PostItem = ({ postId }) => {
+  const post = useSelector((state) => selectPostById(state, postId));
 
   return (
     <>

@@ -85,7 +85,7 @@ const EditPost = () => {
           labelId="select-users"
           value={userId}
           label="Author"
-          onChange={(e) => setUserId(e.target.value)}
+          onChange={(e) => setUserId(Number(e.target.value))}
         >
           {users.map((user) => (
             <MenuItem key={user.id} value={user.id}>

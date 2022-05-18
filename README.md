@@ -5,3 +5,4 @@
 - two reducers
 - prepare function in reducer
 - async thunk
+- using slice adapter for data normalization
